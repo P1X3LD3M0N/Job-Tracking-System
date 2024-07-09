@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Job Application Tracker",
+    "version": "1.0",
+    "description": "Track job applications and save details to Google Sheets",
+    "permissions": [
+      "identity"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "oauth2": {
+      "client_id": "YOUR_GOOGLE_CLIENT_ID",
+      "scopes": [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive.file"
+      ]
+    }
+  }
+  
